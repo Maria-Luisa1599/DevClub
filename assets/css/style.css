@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+body{
+    height: 100vh;
+    padding: 150px;
+    background: #CCEE66;
+    overflow: hidden;
+    font-family: "Noto Sans", sans-serif;
+
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: -600px;
+    z-index: 1;
+    height: 120%;
+    width: 100%;
+    transform: rotate(-70deg);
+    background:#202020;
+}
+
+body::after{
+    content: "Nike";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    z-index: 1;
+    font-size: 250px;
+    font-weight: bold; 
+    color: black;
+    opacity: 0.5;
+}
+
+.paragraphs{
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+.paragraphs > *{
+    margin-bottom: 50px;
+}
+.paragraphs div{
+   font-size: 30px;
+   font-weight: 800;
+}
+.paragraphs h1{
+    width: 350px;
+
+    font-size: 80px;
+    font-weight: 800;
+}
+.paragraphs p{
+    width: 500px;
+}
+
+.img-nike{
+    position: absolute;
+    top: 220px;
+    left: 960px;
+    z-index: 2;
+    transform: rotate(-25deg); 
+}
+.img-nike img{
+    width: 800px; 
+    filter: drop-shadow(30px 45px 40px #161616);
+    transition: 1s;
+}
+.troca-efeito {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.all-buttons{
+    position: relative;
+    z-index: 2;
+}
+
+.button-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 200px;
+    border-radius: 200px;
+    background:#CCEE66;
+    opacity: 0.8;
+    margin: -15px 0 40px 0;
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+}
+
+.buttons .green-button{
+    background: #CCEE66;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.buttons .pink-button{
+    background: #FF9EB5;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.buttons .blue-button{
+    background:#58CCED;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    cursor: pointer;
+}

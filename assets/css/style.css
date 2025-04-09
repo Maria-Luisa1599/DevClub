@@ -69,7 +69,7 @@ body::after{
     z-index: 2;
     transform: rotate(-25deg); 
 }
-.img-nike img{
+.nike{
     width: 800px; 
     filter: drop-shadow(30px 45px 40px #161616);
     transition: 1s;
@@ -82,6 +82,7 @@ body::after{
 .all-buttons{
     position: relative;
     z-index: 2;
+    
 }
 
 .button-cart{
